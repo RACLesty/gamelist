@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MOBA Match Tracker - Match Queue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>MOBA Match Tracker</h1>
+
+  <div class="participants">
+    <h2>Add Participants</h2>
+    <input type="text" id="participantName" placeholder="Enter name" />
+    <button onclick="addParticipant()">Add</button>
+    <div id="participantList"></div>
+  </div>
+
+  <div class="match-queue">
+    <h2>Match Queue</h2>
+    <div id="selectionList"></div>
+    <button onclick="addMatch()">Add to Match List</button>
+    <ul id="matchQueue"></ul>
+  </div>
+
+  <div class="match-history">
+    <h2>Match History</h2>
+    <ul id="historyList"></ul>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
